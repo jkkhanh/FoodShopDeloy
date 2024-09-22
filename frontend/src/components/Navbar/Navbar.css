@@ -1,0 +1,125 @@
+.navbar{
+    display: flex;
+    padding: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+hr{
+    background-color: #49557e;
+    height: 1px;
+    border: none;
+}
+.navbar h1{
+    color: orangered;
+    font-size: 40px;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    color: blue;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar button{
+    background: transparent;
+    font-size: 18px;
+    color: #49557e;
+    border: 1px solid tomato;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.navbar button:hover{
+    background-color: orange;
+    color: white;
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid red;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar-search-icon{
+
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 15px;
+    min-height: 15px;
+    background-color: red;
+    border-radius: 10px;
+    top: -6px;
+    right: -10px;
+}
+.search-icon{
+    width: 35px;
+    cursor: pointer;
+}
+
+.basket-icon{
+    width: 40px;
+}
+
+.navbar-profile{
+    position: relative;
+    cursor: pointer;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding:  12px 25px;
+    border-radius: 4px;
+    border: 1px solid orangered;
+    outline: 2px solid white;
+    list-style: none;
+}
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+.nav-profile-dropdown img {
+    width: 20px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.nav-profile-dropdown li:hover {
+    color: orangered;
+    font-weight: 600;
+}
+
+.nav-profile-dropdown li:hover img {
+    transform: scale(1.2); /* Phóng to hình ảnh khi hover */
+    filter: brightness(1.2); /* Làm sáng hình ảnh khi hover */
+}
+
+
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}

@@ -1,0 +1,65 @@
+.add{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 40px;
+    color: #6d6d6d;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+.add form{
+    gap: 20px;
+}
+
+.image-upload {
+    border: 1px solid #ccc;
+    width: 40%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.add-img-upload img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.add-product-name, .add-product-description{
+    width: max(40%,280px);
+    margin-top: 10px;
+}
+.add-product-name input, .add-product-description textarea{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.add-category-price{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 5px;
+}
+.add-category-price select{
+    max-width: 40% ;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.add-category-price input{
+    max-width: 40%;
+    padding: 10px;
+}
+
+.add-btn{
+    margin-top: 20px;
+    max-width: 40%;
+    border: none;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}

@@ -1,0 +1,23 @@
+.list-table-format{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.list-table-format.title{
+    background-color: #dd6707;
+}
+.image-list{
+    width: 80px;
+    height: 70px;
+}
+
+.remove-icon{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
