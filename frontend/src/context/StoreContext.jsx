@@ -10,7 +10,7 @@ const StoreContextProvider = (props) =>{
     const [search,setSearch] = useState('');//search 
     const [showSearch, setShowSearch ] = useState(true); //nếu k thì sửa thành false là được, search
 
-    const url = "http://localhost:4000"
+    const url = "https://foodshopdeloy.onrender.com"
     const [token,setToken] = useState("");
     const [food_list,setFoodlist] =useState([])
 
